@@ -34,3 +34,14 @@ const searchanything = "Seacrh Anything....",
     featuredProduct = "Featured Products",
     girlsDress = "Girls Dress",
     womenDress = "Women Dress";
+
+// categories strings
+const womenClothing = "Women Clothing",
+    menClothingFashion = "Men Clothing Fashion",
+    compAccess = "Computer and Accessories",
+    automobile = "Automobile",
+    kidtoy = "Kids & Toys",
+    sport = "Sports",
+    jewellary = "Jewellary",
+    furniture = "Furniture",
+    cellphone = "Cellphone & Tab";
