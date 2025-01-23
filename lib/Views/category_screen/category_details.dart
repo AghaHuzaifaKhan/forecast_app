@@ -1,6 +1,8 @@
+import 'package:emart_app/Views/category_screen/item_details.dart';
 import 'package:emart_app/Widget_common/bg_widget.dart';
 import 'package:emart_app/consts/consts.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class CategoryDetails extends StatelessWidget {
   final String? title;
@@ -78,7 +80,10 @@ class CategoryDetails extends StatelessWidget {
                           .margin(const EdgeInsets.symmetric(horizontal: 4))
                           .roundedSM
                           .padding(const EdgeInsets.all(12))
-                          .make();
+                          .make()
+                          .onTap(() {
+                        Get.to(() => const ItemDetails(title: "Dummy title"));
+                      });
                     }))
           ],
         ),
