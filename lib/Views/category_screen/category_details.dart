@@ -76,7 +76,6 @@ class CategoryDetails extends StatelessWidget {
                         ],
                       )
                           .box
-                          .white
                           .margin(const EdgeInsets.symmetric(horizontal: 4))
                           .roundedSM
                           .padding(const EdgeInsets.all(12))

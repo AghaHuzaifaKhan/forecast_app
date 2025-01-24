@@ -9,6 +9,7 @@ const name = "Name";
 const nameHint = "Your Name";
 const forgetpassword = "Forget Password";
 const login = "Log In";
+const logout = "Log Out";
 const signup = "Sign Up";
 const createNewAccount = "Create New Account";
 const loginwith = "Log in With";
@@ -45,3 +46,15 @@ const womenClothing = "Women Clothing",
     jewellary = "Jewellary",
     furniture = "Furniture",
     cellphone = "Cellphone & Tab";
+
+//Item List Strings
+
+const video = "Video",
+    reviews = "Reviews",
+    sellerpolicy = "Seller Policy",
+    returnpolicy = "Return Policy",
+    supportpolicy = "Support Policy",
+    productyoumaylike = "Products you may also Like";
+
+//profile String
+const wishlist = "My Wishlist", orders = "My Orders", message = "Messages";

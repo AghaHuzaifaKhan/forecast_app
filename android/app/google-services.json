@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "473654407129",
+    "project_id": "online-furniture-store-42b13",
+    "storage_bucket": "online-furniture-store-42b13.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473654407129:android:bc6f9e2da3f132086873c8",
+        "android_client_info": {
+          "package_name": "com.example.forecast_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH-z_9Drbw4HxOZTvaqeUbc4u--cxCyC8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -16,8 +16,8 @@ const featuredTitles1 = [womenDress, girlWatches, girlsDress];
 const featuredTitles2 = [boysGlasses, mobilePhone, tShirts];
 
 const categorylist = [
-  womenClothing,
   menClothingFashion,
+  womenClothing,
   compAccess,
   automobile,
   kidtoy,
@@ -28,12 +28,23 @@ const categorylist = [
 ];
 const categoryImages = [
   imgFc1,
+  imgS1,
   imgFc2,
   imgFc3,
   imgFc4,
   imgFc5,
+  imgS11,
   imgFc6,
-  imgFc7,
-  imgFc8,
   imgFc9
 ];
+
+const itemDetailButtonsList = [
+  video,
+  reviews,
+  supportpolicy,
+  returnpolicy,
+  privacyPolicy,
+];
+
+const profilelButtonsList = [orders, wishlist, message];
+const profilelButtonsIcon = [icOrder, icOrder, icMessages];

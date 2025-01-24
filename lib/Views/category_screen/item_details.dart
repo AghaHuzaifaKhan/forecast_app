@@ -1,5 +1,6 @@
 import 'package:emart_app/Widget_common/our_button.dart';
 import 'package:emart_app/consts/consts.dart';
+import 'package:emart_app/consts/list.dart';
 import 'package:flutter/material.dart';
 
 class ItemDetails extends StatelessWidget {
@@ -73,7 +74,11 @@ class ItemDetails extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            "Seller".text.white.fontFamily(semibold).make(),
+                            "Seller"
+                                .text
+                                .color(darkFontGrey)
+                                .fontFamily(semibold)
+                                .make(),
                             5.heightBox,
                             "In House Brands"
                                 .text
@@ -105,7 +110,7 @@ class ItemDetails extends StatelessWidget {
                           children: [
                             SizedBox(
                               width: 100,
-                              child: "Color:".text.color(textfieldGrey).make(),
+                              child: "Color:".text.color(darkFontGrey).make(),
                             ),
                             Row(
                               children: List.generate(
@@ -126,7 +131,7 @@ class ItemDetails extends StatelessWidget {
                           children: [
                             SizedBox(
                               width: 100,
-                              child: "Color:".text.color(textfieldGrey).make(),
+                              child: "Color:".text.color(darkFontGrey).make(),
                             ),
                             Row(
                               children: [
@@ -143,10 +148,7 @@ class ItemDetails extends StatelessWidget {
                                     onPressed: () {},
                                     icon: const Icon(Icons.add)),
                                 10.widthBox,
-                                "(0 available)"
-                                    .text
-                                    .color(textfieldGrey)
-                                    .make(),
+                                "(0 available)".text.color(darkFontGrey).make(),
                               ],
                             ),
                           ],
@@ -157,7 +159,7 @@ class ItemDetails extends StatelessWidget {
                           children: [
                             SizedBox(
                               width: 100,
-                              child: "Total:".text.color(textfieldGrey).make(),
+                              child: "Total:".text.color(darkFontGrey).make(),
                             ),
                             "\$0.00"
                                 .text
@@ -184,13 +186,71 @@ class ItemDetails extends StatelessWidget {
                         .make(),
 
                     //buttons Sections
+                    10.heightBox,
                     ListView(
+                      physics: const NeverScrollableScrollPhysics(),
                       shrinkWrap: true,
-                      children: List.generate(5, (index) => ListTile(title: 
-                      "Video".text.fontFamily(semibold).color(darkFontGrey).make(),
-                      trailing: const Icon(Icons.arrow_forward),))),
-                    )
+                      children: List.generate(
+                        itemDetailButtonsList.length,
+                        (index) => ListTile(
+                          title: itemDetailButtonsList[index]
+                              .text
+                              .fontFamily(semibold)
+                              .color(darkFontGrey)
+                              .make(),
+                          trailing: const Icon(Icons.arrow_forward),
+                        ),
+                      ),
+                    ),
+
+                    20.heightBox,
+                    //product you may like
+                    productyoumaylike.text
+                        .fontFamily(bold)
+                        .size(16)
+                        .color(darkFontGrey)
+                        .make(),
+                    10.heightBox,
+                    //Copied this widget from home screen featured product
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: List.generate(
+                            6,
+                            (index) => Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Image.asset(
+                                      imgP1,
+                                      width: 150,
+                                      fit: BoxFit.cover,
+                                    ),
+                                    10.heightBox,
+                                    "Laptop 4GB/64GB"
+                                        .text
+                                        .fontFamily(semibold)
+                                        .color(darkFontGrey)
+                                        .make(),
+                                    10.heightBox,
+                                    "\$600"
+                                        .text
+                                        .color(redColor)
+                                        .fontFamily(bold)
+                                        .size(16)
+                                        .make(),
+                                  ],
+                                )
+                                    .box
+                                    .white
+                                    .margin(const EdgeInsets.symmetric(
+                                        horizontal: 4))
+                                    .roundedSM
+                                    .padding(const EdgeInsets.all(4))
+                                    .make()),
+                      ),
+                    ),
                   ],
+                  //detaled UI
                 ),
               ),
             ),
